@@ -54,7 +54,7 @@ void dijkstra(int G[MAX_NODES][MAX_NODES], int numNodes, int startNode) {
     // Print the distance and path of each node
     for (i = 0; i < numNodes; i++) {
         if (i != startNode) {
-            cout << "Distance from node " << startNode << " to " << i << " = " << distance[i] << endl;
+            cout << "Time taken from node " << startNode << " to " << i << " = " << distance[i] << endl;
             cout << "Path: " << i;
 
             j = i;
@@ -78,7 +78,7 @@ int main() {
         {5, 0, 0, 20, 0, 0}
     };
     int numNodes = 6;
-    for (int i=0; i<7; i++){
+    for (int i=0; i<6; i++){
         int startNode = i;  
         cout << "start node: " << startNode << endl;
         dijkstra(graph, numNodes, startNode);
